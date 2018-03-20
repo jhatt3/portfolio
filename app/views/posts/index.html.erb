@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Posts</h1>
+<!-- display blog posts-->
+
+
+<div class="panel-group">
+  <% @posts.each do |post| %><!-- iterate through posts-->
+    <div class="panel blog-panel">
+      <div class="panel-heading blog-panel-heading"><h3><%= link_to post.title, post, class: "post-title" %></h3></div>    
+      <div class="panel-body blog-panel-body">
+        <h4>By: <%= post.author %></h4>
+        <p><%= post.blog_entry %></p>
+      </div>
+      <div class="panel-footer blog-panel-footer">
+        <%= link_to 'Edit', edit_post_path(post), class: "btn btn-xs btn-primary blog-btn"  %>
+        <%= link_to 'Delete', post, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-xs btn-danger blog-btn" %>
+      </div>
+    </div>
+    <br>
+  <% end %><!-- end iteration through blog posts-->
+</div>
+
+<%= link_to 'New Post', new_post_path, class: "btn btn-md btn-new" %><!-- create a new blog post-->
+

@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+
+    <div class="panel blog-panel">
+      <div class="panel-heading blog-panel-heading"><h3><%= @post.title %></h3></div>    
+      <div class="panel-body blog-show-panel-body">
+        <h4>By: <%= @post.author %></h4>
+        <p><%= @post.blog_entry %></p>
+      </div>
+      <div class="panel-footer blog-panel-footer">
+        <%= link_to 'Back', posts_path, class: "btn btn-xs btn-primary blog-btn"  %>
+        <%= link_to 'Edit', edit_post_path(@post), class: "btn btn-xs btn-primary blog-btn"  %>
+      </div>
+    </div>
+

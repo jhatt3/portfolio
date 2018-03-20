@@ -1,0 +1,103 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+@import 'bootstrap-sprockets';
+@import 'bootstrap';
+
+body {
+    box-sizing: border-box;
+    background-color: #e7e7e7;
+    color: #333333;
+}
+
+.btn-new {
+    background-color: #bb6f0b;
+    color: #221f1f;
+    border: 0;
+}
+
+.btn-new:hover {
+    background-color: #d18b2f;
+    color: #e7e7e7;
+    border: 0;
+}
+
+.blog-panel {
+    border: 0;
+    border-radius: 0;
+}
+
+.blog-panel-heading, h3 {
+    background-color: #bb6f0b;
+    border-radius: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    height: 45px;
+    margin: 0;
+    border: 0;
+    padding: 3px;
+    padding-left: 10px;
+}
+
+.blog-panel-body {
+    background-color: #e7e7e7;
+    color: #333333;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.6em;
+    height: 205px;
+    overflow: hidden;
+}
+
+.blog-show-panel-body {
+    background-color: #e7e7e7;
+    border: 0;
+    color: #333333;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.6em;
+    overflow: hidden;
+}
+
+.blog-panel-footer {
+    background-color: #e7e7e7;
+    border-radius: 0;
+    border: 0;
+    border-bottom: #463b3b solid 1px;
+    display: flex;
+}
+
+.blog-btn {
+    margin: 0;
+    border-radius: 0;
+    border: 0;
+    color: #e6e0e0;
+    padding: 0 15px;
+
+}
+
+.blog-btn:hover {
+    background-color: #bb6f0b;
+    color: #221f1f;
+    padding: 0px 20px;
+}
+
+.post-title {
+    color: #333333;
+}
+
+.post-title:hover {
+    text-decoration: none;
+    color: #e7e7e7;
+    font-weight: 400;
+}
